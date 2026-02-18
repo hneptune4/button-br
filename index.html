@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Postingan JIN</title>
+<title>Daily Tweet | JIN</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f5f8fa;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    text-align: center;
+}
 
-        .btn-jin {
-            display: inline-block;
-            padding: 20px 60px;
-            font-size: 26px;
-            font-weight: bold;
-            color: #1DA1F2;
-            border: 2px solid #1DA1F2;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+.banner {
+    background-color: #dbe7f3;
+    padding: 40px 20px;
+}
 
-        .btn-jin:hover {
-            background-color: #1DA1F2;
-            color: white;
-        }
-    </style>
+.banner img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid white;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1DA1F2;
+    margin-top: 20px;
+}
+
+.subtitle {
+    color: #555;
+    margin-top: 5px;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 60px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+</style>
 </head>
 
 <body>
 
-    <h2>Brand_twt</h2>
+<div class="banner">
+    <img src="https://i.imgur.com/0y0y0y0.jpg" alt="JIN">
+    <div class="title">Daily Tweet for JIN</div>
+    <div class="subtitle" id="todayDate"></div>
+</div>
 
-<a class="btn-jin"
-    href="https://twitter.com/intent/tweet?text=BTS%20JIN%20continues%20to%20shine%20with%20his%20global%20influence%20and%20positive%20image.%20His%20strong%20brand%20reputation%20reflects%20his%20talent%20and%20sincerity%20%F0%9F%92%99%0A%0A%23JIN%20%23SEOKJIN%20%23%EC%A7%84%20%23%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8%EC%A7%84%20%40BTS_twt"
-    target="_blank">
-    Postingan #JIN
+<div class="section">
+
+<a class="btn"
+href="https://twitter.com/intent/tweet?text=%F0%9F%90%B1%20%7C%20Daily%20Tweet%20%7C%20Brand%20Reputation%20%7C%20BTS%20JIN%0A%0A%23JIN%20%23SEOKJIN%20%23%EC%A7%84%20%23Jin_TOUR%20%40BTS_twt"
+target="_blank">
+
+Postingan #JIN
+
 </a>
 
+</div>
+
+<script>
+const today = new Date();
+const formatted = today.getFullYear() + "." +
+("0" + (today.getMonth()+1)).slice(-2) + "." +
+("0" + today.getDate()).slice(-2);
+
+document.getElementById("todayDate").innerText = formatted;
+</script>
 
 </body>
 </html>
-
-
-
-
